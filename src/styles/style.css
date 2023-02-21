@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  background-color: #202142;
+  color: #eee;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.my-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: aquamarine;
+  color: #c60000;
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 15px;
+  padding: 35px 25px;
+  margin: 30px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.reverse {
+  background-color: rgb(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 0 40px;
+}
+
+.rating li,
+.num-display {
+  position: absolute;
+  background: #ff0182;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 15px;
+  border: 5px solid #131428;
+  transition: 0.3s;
+  top: -15px;
+  left: -15px;
+}
+
+.text-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback-stats {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group.name-input {
+  width: 15em;
+  padding-bottom: 1em;
+  justify-content: flex-start;
+}
+
+.name {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 12px;
+  color: #aeaeae;
+  user-select: none;
+}
+
+.btn {
+  font-family: "Poppins";
+  height: 35px;
+  margin-left: 1em;
+  cursor: pointer;
+  border: 0;
+  width: 7em;
+  border-radius: 10px;
+  color: #eee;
+}
+
+.btn-secondary {
+  background-color: #202142;
+}
+
+.btn-primary {
+  background-color: #ff0182;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:disabled {
+  background-color: rgba(238, 238, 238, 0.2);
+  color: #000;
+}
+
+.ratings {
+  display: flex;
+  padding: 1em 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.num-rating {
+  background-color: rgba(238, 238, 238, 0.2);
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  justify-content: center;
+  margin: 0.5em;
+  border-radius: 30px;
+  transition: all 1s;
+}
+.num-rating:hover {
+  background-color: #ff0182;
+}
+
+.label-rating .active {
+  border-radius: 25px;
+  border: 2px solid #ff0182;
+}
+
+.input-rating {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.label-rating {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.num-rating input[type='radio']:checked + span {
+  border-radius: 20px;
+  border: 1px solid #ff0182;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  box-shadow: 1px 1px 11px rgb(255 1 130 / 50%);
+  transform: scale(1.3);
+}
+
+.input-group input {
+  width: 80%;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 10px;
+  outline: none;
+  font-family: "Poppins";
+  padding: 5px 10px;
+  transition: 1s ease-in-out;
+  border: 0;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-page--a,
+.about-link svg {
+  text-decoration: none;
+  color: #ff0182;
+  margin: 1em 0;
+}
+.about-link {
+  padding: 1em 1em;
+  text-align: right;
+}
+
+.btns-block {
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.btns-block button {
+  background: transparent;
+  border: 0;
+  margin: 0 2px;
+  cursor: pointer;
+  color: #ff0182;
+  font-size: 1em;
+}
+
