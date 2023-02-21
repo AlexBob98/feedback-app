@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import Feedback from "./Feedback";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import FeedbackContext from "./context/FeedbackContext";
 import Spinner from "./Shared/Spinner";
+import Animate from "./Shared/Animate";
 
 function FeedbackList() {
   const { feedback, isLoading } = useContext(FeedbackContext);
@@ -16,14 +17,9 @@ function FeedbackList() {
     <div className="feedback-list">
       <AnimatePresence>
         {feedback.map((item) => (
-          <motion.div
-            key={item.id}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: "all 0.5s" }}
-            exit={{ opacity: 0, display: "none" }}
-          >
+          <Animate key={item.id}>
             <Feedback key={item.id} item={item} />
-          </motion.div>
+          </Animate>
         ))}
       </AnimatePresence>
     </div>

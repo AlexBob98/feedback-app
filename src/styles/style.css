@@ -111,6 +111,21 @@ header {
   justify-content: center;
 }
 
+.input-group.name-input {
+  width: 15em;
+  padding-bottom: 1em;
+  justify-content: flex-start;
+}
+
+.name {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 12px;
+  color: #aeaeae;
+  user-select: none;
+}
+
 .btn {
   font-family: "Poppins";
   height: 35px;
