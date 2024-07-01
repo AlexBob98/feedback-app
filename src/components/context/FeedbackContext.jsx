@@ -16,7 +16,7 @@ export const FeedbackProvider = ({ children }) => {
 
   const fetchData = async () => {
     const response = await fetch(
-      `https://63e93cb2811db3d7eff93b7d.mockapi.io/feedback?_sort=id&_order=desc`
+      `https://63e93cb2811db3d7eff93b7d.mockapi.io/feedback`
     );
 
     const data = await response.json();
